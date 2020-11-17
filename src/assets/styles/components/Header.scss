@@ -1,0 +1,71 @@
+.header {
+  font-family: 'Varela Round', sans-serif;
+  align-items: center;
+  background-color: #ffffff;
+  color: darkslategray;
+  display: flex;
+  height: 15%;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 8px 10px -6px #00bfff;
+  -webkit-box-shadow: 0px 8px 10px -6px #00bfff;
+}
+
+.header__img--logo-zinobe {
+  margin-left: 30px;
+  padding: 10px;
+  width: 100px;
+}
+
+.header_img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header_menu {
+  margin-right: 30px;
+}
+.header_menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0 0 0 -14px;
+}
+.header_menu:hover ul,
+ul:hover {
+  display: block;
+}
+.header_menu li {
+  margin: 10px 0px;
+}
+.header_menu li a {
+  color: black;
+  text-decoration: none;
+}
+.header_menu li a:hover {
+  text-decoration: underline;
+}
+
+.header_menu_profile {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.header_menu_profile img {
+  color: black;
+  margin-right: 8px;
+  width: 40px;
+  padding: 5px;
+}
+.header_menu_profile P {
+  margin: 0;
+  color: black;
+}

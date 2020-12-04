@@ -1,6 +1,7 @@
 import React from 'react';
 import userIcon from '../assets/static/user-icon.svg';
 import '../assets/styles/components/User.scss';
+import Graphics from '../containers/Graphics';
 
 const User = () => (
   <>
@@ -21,6 +22,7 @@ const User = () => (
           <p>Puntos</p>
         </div>
       </section>
+      <Graphics />
     </section>
   </>
 );

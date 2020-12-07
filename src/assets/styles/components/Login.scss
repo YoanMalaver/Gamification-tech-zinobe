@@ -15,7 +15,7 @@ h1 {
 form {
   background-color: #fff;
   padding: 40px;
-  box-shadow: 0 0 6px rgba(83, 195, 247, 0.8);
+  box-shadow: 0 0 6px #00bfff;
   border-radius: 10px;
 }
 
@@ -82,14 +82,15 @@ input:focus ~ .barra::before {
 }
 
 button {
-  background: rgba(83, 195, 247, 0.8);
+  background: rgba(0, 91, 255, 0.5);
   font-family: 'Varela Round', sans-serif;
   border: none;
   border-radius: 5px;
   display: block;
   width: 80%;
   margin: 10px auto;
-  color: rgb(83, 82, 82);
+  // color: rgb(83, 82, 82);
+  color: #ffffff;
   height: 40px;
   font-size: 16px;
   cursor: pointer;
@@ -104,4 +105,19 @@ button {
   height: 40px;
   font-size: 16px;
   cursor: pointer;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+  color: rgba(0, 174, 255, 0.8);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 100%;
+  }
 }

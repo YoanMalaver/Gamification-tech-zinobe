@@ -11,7 +11,7 @@
 }
 
 .footer a {
-  color: dimgray;
+  color: gray;
   cursor: pointer;
   font-size: 14px;
   margin-left: 40px;
@@ -22,4 +22,12 @@
 .footer a:hover {
   text-decoration: underline;
   color: #ffffff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

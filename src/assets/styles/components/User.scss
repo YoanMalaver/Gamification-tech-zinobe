@@ -13,7 +13,8 @@
   margin: 40px;
   background-color: #fff;
   padding: 0;
-  box-shadow: 2px 0px 0px -1px #353535;
+  padding-right: 10px;
+  box-shadow: 2px 0px 0px -1.7px #353535;
   // box-shadow: 0 0 6px rgba(83, 195, 247, 0.8);
   // border-radius: 10px;
 }
@@ -47,9 +48,22 @@
   font-weight: 600;
 }
 
+.user__container p:hover {
+  color: #00bfff;
+  font-size: 17px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .badge__avatar {
   border-radius: 50%;
   width: 120px;
   margin: 10px auto;
   display: block;
 }
+
+.badge__avatar:hover {
+  width: 125px;
+  cursor: pointer;
+}
+

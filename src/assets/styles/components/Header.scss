@@ -19,16 +19,20 @@
   margin-left: 30px;
   padding: 10px;
   width: 100px;
+  cursor: pointer;
 }
 
 .header_img {
   width: 200px;
   margin-top: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
+
 
 .header_menu {
   margin-right: 30px;
+
 }
 .header_menu ul {
   display: none;
@@ -39,19 +43,23 @@
   text-align: right;
   margin: 0 0 0 -14px;
 }
-.header_menu:hover ul,
-ul:hover {
+
+.header_menu:hover ul, ul:hover {
   display: block;
+  color: #00bfff;
 }
 .header_menu li {
   margin: 10px 0px;
 }
+
 .header_menu li a {
-  color: black;
+  color: darkslategray;
   text-decoration: none;
 }
+
 .header_menu li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
+  color: black;
 }
 
 .header_menu_profile {
@@ -59,13 +67,24 @@ ul:hover {
   display: flex;
   align-items: center;
 }
+
 .header_menu_profile img {
-  color: black;
+  color: darkslategray;
   margin-right: 8px;
   width: 40px;
   padding: 5px;
+  cursor: pointer;
 }
+
 .header_menu_profile P {
   margin: 0;
-  color: black;
+  color: darkslategray;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+.header_menu_profile P:hover {
+  text-decoration: #00bfff;
+}
+  

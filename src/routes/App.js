@@ -5,6 +5,7 @@ import Login from '../containers/Login';
 import Administrator from '../containers/Administrator';
 import Register from '../containers/Register';
 import NotFound from '../containers/NotFound';
+import Crud from '../containers/Crud.js';
 import Layout from '../components/Layout';
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/User' component={Register} />
         <Route exact path='/Administrator' component={Administrator} />
+        <Route exact path='/Crud' component={Crud} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

@@ -7,8 +7,9 @@ const EditUserForm = (props) => {
     defaultValues: props.currentUser,
   });
 
-  setValue('name', props.currentUser.name);
-  setValue('username', props.currentUser.username);
+  setValue('name', props.currentUser.name, 'email', props.currentUser.email);
+  // setValue('email', props.currentUser.email);
+  setValue('cedula', props.currentUser.cedula);
 
   const onSubmit = (data, e) => {
     // console.log(data);
@@ -20,21 +21,44 @@ const EditUserForm = (props) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label>name</label>
-      <input
-        type='text'
-        name='name'
-        ref={register({ require: { value: true, message: 'Campo requerido' } })}
-      />
-      <div>{errors?.name?.message}</div>
-      <label>username</label>
-      <input
-        type='text'
-        name='username'
-        ref={register({ require: { value: true, message: 'Campo requerido' } })}
-      />
-      <div>{errors?.username?.message}</div>
-      <button>Edit User</button>
+      <div className='group'>
+        <input
+          type='text'
+          name='email'
+          ref={register({
+            required: { value: true, message: 'Campo requerido' },
+          })}
+        />
+        <span className='barra'> </span>
+        <label>Email</label>
+        <div>{errors?.email?.message}</div>
+      </div>
+
+      <div className='group'>
+        <input
+          type='text'
+          name='name'
+          ref={register({
+            required: { value: true, message: 'Campo requerido' },
+          })}
+        />
+        <span className='barra'> </span>
+        <label>Nombre</label>
+        <div>{errors?.name?.message}</div>
+      </div>
+      <div className='group'>
+        <input
+          type='number'
+          name='cedula'
+          ref={register({
+            required: { value: true, message: 'Campo requerido' },
+          })}
+        />
+        <span className='barra'> </span>
+        <label>Cedula</label>
+        <div>{errors?.cedula?.message}</div>
+      </div>
+      <button>Editar Usuario</button>
     </form>
   );
 };

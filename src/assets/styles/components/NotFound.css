@@ -1,0 +1,22 @@
+.container__not {
+  display: flex;
+  align-items: center;
+}
+
+.container__not img {
+  width: 49%;
+}
+
+.container__not span {
+  width: 49%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.container__not span a {
+  text-decoration: none;
+  color: black;
+}
+.container__not span a:hover {
+  color: #53c3f7;
+}

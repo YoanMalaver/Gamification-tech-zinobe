@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import reducer from './reducers';
 import App from './routes/App';
 
+// logica de login con el store y el provider
 const initiaState = {
   user: {},
 };
@@ -15,6 +16,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  // eslint-disable-next-line comma-dangle
   document.getElementById('app')
 );

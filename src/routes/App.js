@@ -1,26 +1,30 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from '../containers/Home';
 import Login from '../containers/Login';
-import Administrator from '../containers/Administrator';
-import Register from '../containers/Register';
-import NotFound from '../containers/NotFound';
-import Crud from '../containers/Crud.js';
 import Layout from '../components/Layout';
+import NotFound from '../containers/NotFound';
+import DashboardAdmin from '../containers/DashboardAdmin';
+import CrearUsuarios from '../pages/CrearUsuarios';
+import CrearEquipos from '../pages/CrearEquipos';
+import CrearSeniorities from '../pages/CrearSeniorities';
+import Equipo from '../pages/Equipo';
 
-const App = () => (
-  <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/User' component={Register} />
-        <Route exact path='/Administrator' component={Administrator} />
-        <Route exact path='/Crud' component={Crud} />
-        <Route component={NotFound} />
-      </Switch>
-    </Layout>
-  </BrowserRouter>
-);
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path='/' component={Login} />
+          <Route exact path='/dashboardadmin' component={DashboardAdmin} />
+          <Route exact path='/crearusuarios' component={CrearUsuarios} />
+          <Route exact path='/crearseniorities' component={CrearSeniorities} />
+          <Route exact path='/crearequipos' component={CrearEquipos} />
+          <Route exact path='/equipo' component={Equipo} />
+          <Route component={NotFound} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
+  );
+};
 
 export default App;

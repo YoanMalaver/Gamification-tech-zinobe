@@ -1,0 +1,13 @@
+.verde {
+  background-color: green;
+  color: white;
+  width: 12%;
+  margin: 5px;
+  font-family: 'Varela Round', sans-serif;
+  cursor: pointer;
+}
+
+.rojo {
+  background-color: rgb(241, 66, 66);
+  color: white;
+}

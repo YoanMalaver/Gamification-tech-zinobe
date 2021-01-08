@@ -2,24 +2,32 @@
   --colorTextos: #49454567;
 }
 .login {
-  height: 650px;
+  min-height: calc(100vh - 5vh); /*Footer acomodado*/
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 0 5%; opcional
 }
+
+.imagen img {
+  width: 270px;
+  height: 360px;
+  object-fit: cover;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
 .register {
   height: 650%;
   display: inline-block;
 }
-h1 {
+.form h1 {
   text-align: center;
   font-weight: 700;
 }
 form {
   background-color: #fff;
   padding: 25px;
-  box-shadow: 0 0 6px rgba(83, 195, 247, 0.8);
+  box-shadow: 0 0 3px#53c3f7;
   border-radius: 10px;
 }
 
@@ -76,7 +84,7 @@ input:valid ~ label {
   width: 0%;
   bottom: 0;
   position: absolute;
-  background: rgba(83, 195, 247, 0.8);
+  background: #53c3f7;
   transition: 0.3s ease width;
   left: 0;
 }
@@ -86,7 +94,7 @@ input:focus ~ .barra::before {
 }
 
 button {
-  background: rgba(83, 195, 247, 0.8);
+  background: #53c3f7;
   font-family: 'Varela Round', sans-serif;
   border: none;
   border-radius: 5px;
@@ -102,8 +110,8 @@ button {
 .forgot {
   display: block;
   text-align: center;
-  // width: 80%;
-  // margin: 15px auto;
+  /* // width: 80%;
+  // margin: 15px auto; */
   color: rgba(83, 195, 247, 0.8);
   height: 40px;
   font-size: 16px;
